@@ -17,6 +17,7 @@ def get_japanese_emoticon(file_path, emoticon)
     # binding.pry
   jap_emo = emo["get_emoticon"][emoticon]
   if jap_emo
+    
   else "Sorry, that emoticon was not found"
   end
   jap_emo
