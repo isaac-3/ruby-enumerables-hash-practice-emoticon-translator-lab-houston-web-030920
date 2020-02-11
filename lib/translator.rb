@@ -15,8 +15,8 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   emo = load_library(file_path)
   jap_emo = emo["get_emoticon"][emoticon]
+  binding.pry
   if !jap_emo.include?(jap_emo) 
-    binding.pry
     "Sorry, that emoticon was not found"
   end
   jap_emo
