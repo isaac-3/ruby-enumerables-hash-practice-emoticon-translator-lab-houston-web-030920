@@ -14,7 +14,6 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emo = load_library(file_path)
-    # binding.pry
   jap_emo = emo["get_emoticon"][emoticon]
   if jap_emo
     jap_emo
@@ -25,6 +24,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   emo = load_library(file_path)
+  eng_meaning = emo["get_meaning"][emoticon]
   
   
   
@@ -32,3 +32,7 @@ def get_english_meaning(file_path, emoticon)
 
   # code goes here
 end
+
+
+
+
