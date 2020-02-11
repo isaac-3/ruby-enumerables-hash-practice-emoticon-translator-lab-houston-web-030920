@@ -25,7 +25,10 @@ end
 def get_english_meaning(file_path, emoticon)
   emo = load_library(file_path)
   eng_meaning = emo["get_meaning"][emoticon]
-  
+  if eng_meaning
+    eng_meaning
+  else
+    
   
   
   
